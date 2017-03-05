@@ -3,6 +3,8 @@ import React, {
 } from 'react'
 
 var Alert = require('react-bootstrap/lib/Alert');
+var Tooltip = require('react-bootstrap/lib/Tooltip');
+
 import  ItemSubRedditImage from './ItemSubRedditImage'
 
 import './ItemSubReddit.css'
@@ -28,7 +30,7 @@ class ItemSubReddit extends Component {
         }
     }
 
-    fun
+
 
     render() {
         return (
@@ -37,6 +39,11 @@ class ItemSubReddit extends Component {
                 <Alert bsStyle="info" key={post.id}>
                   <ItemSubRedditImage image={post.thumbnail}/>
                   <strong>Topic: </strong>{post.title}
+                  <div>
+                    <Tooltip placement="bottom" className="in" id="tooltip-top">
+                    {post.score}
+                    </Tooltip>
+                  </div>
                 </Alert>
             )}
           </div>
