@@ -1,0 +1,13 @@
+.header{
+  height: 50px;
+  background-color: #252529;
+  width: 100%;
+  z-index: 9999999999;
+}
+
+.header p{
+  color: #a1a1af;
+  font-size: 23px;
+  padding-left: 17px;
+  padding-top: 8px;
+}

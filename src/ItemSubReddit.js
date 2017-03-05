@@ -30,8 +30,6 @@ class ItemSubReddit extends Component {
         }
     }
 
-
-
     render() {
         return (
           <div>
